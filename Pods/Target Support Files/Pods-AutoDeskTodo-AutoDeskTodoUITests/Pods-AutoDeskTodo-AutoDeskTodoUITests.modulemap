@@ -1,0 +1,6 @@
+framework module Pods_AutoDeskTodo_AutoDeskTodoUITests {
+  umbrella header "Pods-AutoDeskTodo-AutoDeskTodoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,18 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CE84F2E9121FF763D4CE94 /* Pods_AutoDeskTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191C7A9209D635EA2E68EA5 /* Pods_AutoDeskTodoTests.framework */; };
 		8FBF7883261F389B00079B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7882261F389B00079B16 /* AppDelegate.swift */; };
-		8FBF7885261F389B00079B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7884261F389B00079B16 /* SceneDelegate.swift */; };
-		8FBF7887261F389B00079B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7886261F389B00079B16 /* ViewController.swift */; };
-		8FBF788A261F389B00079B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7888261F389B00079B16 /* Main.storyboard */; };
 		8FBF788C261F389D00079B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF788B261F389D00079B16 /* Assets.xcassets */; };
 		8FBF788F261F389D00079B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF788D261F389D00079B16 /* LaunchScreen.storyboard */; };
 		8FBF789A261F389D00079B16 /* AutoDeskTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7899261F389D00079B16 /* AutoDeskTodoTests.swift */; };
 		8FBF78A5261F389E00079B16 /* AutoDeskTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78A4261F389E00079B16 /* AutoDeskTodoUITests.swift */; };
+		8FBF78C7261F409800079B16 /* Cooredinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78BD261F409800079B16 /* Cooredinators.swift */; };
+		8FBF78C8261F409800079B16 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78BE261F409800079B16 /* BaseCoordinator.swift */; };
+		8FBF78CA261F409800079B16 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78C0261F409800079B16 /* Application.swift */; };
+		8FBF78CB261F409800079B16 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78C2261F409800079B16 /* Routable.swift */; };
+		8FBF78CC261F409800079B16 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78C3261F409800079B16 /* Presentable.swift */; };
+		8FBF78CD261F409800079B16 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78C4261F409800079B16 /* Coordinator.swift */; };
+		8FBF78CE261F409800079B16 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78C6261F409800079B16 /* ApplicationRouter.swift */; };
+		8FBF78F7261F457000079B16 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78EF261F457000079B16 /* OnboardingCoordinator.swift */; };
+		8FBF78F8261F457000079B16 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78F0261F457000079B16 /* OnboardingViewController.swift */; };
+		8FBF78F9261F457000079B16 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78F1261F457000079B16 /* Onboarding.swift */; };
+		8FBF78FD261F457000079B16 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF78F6261F457000079B16 /* OnboardingViewModel.swift */; };
+		8FBF7920261F4C6400079B16 /* EasyViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF791B261F4C6400079B16 /* EasyViews.swift */; };
+		8FBF7921261F4C6400079B16 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF791C261F4C6400079B16 /* ColorPalette.swift */; };
+		8FBF7922261F4C6400079B16 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF791D261F4C6400079B16 /* AppFonts.swift */; };
+		8FBF7923261F4C6400079B16 /* EasyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF791E261F4C6400079B16 /* EasyShadow.swift */; };
+		8FBF7941261F514500079B16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7939261F514500079B16 /* MainViewController.swift */; };
+		8FBF7942261F514500079B16 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF793A261F514500079B16 /* MainViewModel.swift */; };
+		8FBF7943261F514500079B16 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF793B261F514500079B16 /* MainCoordinator.swift */; };
+		8FBF7944261F514500079B16 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF793C261F514500079B16 /* Main.swift */; };
+		8FBF7945261F514500079B16 /* MainRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF793E261F514500079B16 /* MainRemoteDataSource.swift */; };
+		8FBF7946261F514500079B16 /* MainRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF793F261F514500079B16 /* MainRepo.swift */; };
+		8FBF7947261F514500079B16 /* MainLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7940261F514500079B16 /* MainLocalDataSource.swift */; };
+		8FBF7962261F523C00079B16 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF794E261F523C00079B16 /* Router.swift */; };
+		8FBF7963261F523C00079B16 /* TasksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF794F261F523C00079B16 /* TasksRouter.swift */; };
+		8FBF7964261F523C00079B16 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7950261F523C00079B16 /* Environment.swift */; };
+		8FBF7965261F523C00079B16 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7951261F523C00079B16 /* Error.swift */; };
+		8FBF7966261F523C00079B16 /* URLSession+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7952261F523C00079B16 /* URLSession+Result.swift */; };
+		8FBF796C261F523C00079B16 /* RequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7959261F523C00079B16 /* RequestTask.swift */; };
+		8FBF796D261F523C00079B16 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF795A261F523C00079B16 /* Cancellable.swift */; };
+		8FBF796F261F523C00079B16 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF795D261F523C00079B16 /* Rest.swift */; };
+		8FBF7970261F523C00079B16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF795E261F523C00079B16 /* Utils.swift */; };
+		8FBF7971261F523C00079B16 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF795F261F523C00079B16 /* Endpoint.swift */; };
+		8FBF7972261F523C00079B16 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7960261F523C00079B16 /* Network.swift */; };
+		8FBF7973261F523C00079B16 /* EnvTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7961261F523C00079B16 /* EnvTest.swift */; };
+		8FBF797B261F53CD00079B16 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF797A261F53CD00079B16 /* Task.swift */; };
+		8FBF798C261F59E000079B16 /* URLRequest+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF798B261F59E000079B16 /* URLRequest+Encoding.swift */; };
+		8FBF7991261F5A0600079B16 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7990261F5A0600079B16 /* AnyEncodable.swift */; };
+		8FBF7996261F5BCE00079B16 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7995261F5BCE00079B16 /* Method.swift */; };
+		8FBF79A0261F875C00079B16 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF799F261F875C00079B16 /* URLConvertible+URLRequestConvertible.swift */; };
+		8FBF79E9261FA22F00079B16 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79E7261FA22F00079B16 /* TaskCell.swift */; };
+		8FBF79EA261FA22F00079B16 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF79E8261FA22F00079B16 /* TaskCellViewModel.swift */; };
+		8FBF7A83261FAA1100079B16 /* EasyTableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7A82261FAA1100079B16 /* EasyTableViews.swift */; };
+		B36C4392E6CDE4D7DB6100F2 /* Pods_AutoDeskTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37F49EA7A6D86420452D1EB /* Pods_AutoDeskTodo.framework */; };
+		CC33A82C1AF14DA51E6755CE /* Pods_AutoDeskTodo_AutoDeskTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883830D4B2545D2ECDC3C82D /* Pods_AutoDeskTodo_AutoDeskTodoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69762BED335DDD01BB072D77 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodo-AutoDeskTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodo-AutoDeskTodoUITests/Pods-AutoDeskTodo-AutoDeskTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83EABEE86B9D6A394A858A04 /* Pods-AutoDeskTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodoTests.release.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodoTests/Pods-AutoDeskTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		883830D4B2545D2ECDC3C82D /* Pods_AutoDeskTodo_AutoDeskTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoDeskTodo_AutoDeskTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF787F261F389B00079B16 /* AutoDeskTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoDeskTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF7882261F389B00079B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FBF7884261F389B00079B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FBF7886261F389B00079B16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8FBF7889261F389B00079B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBF788B261F389D00079B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBF788E261F389D00079B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FBF7890261F389D00079B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +91,54 @@
 		8FBF78A0261F389D00079B16 /* AutoDeskTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoDeskTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF78A4261F389E00079B16 /* AutoDeskTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDeskTodoUITests.swift; sourceTree = "<group>"; };
 		8FBF78A6261F389E00079B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBF78BD261F409800079B16 /* Cooredinators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cooredinators.swift; sourceTree = "<group>"; };
+		8FBF78BE261F409800079B16 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		8FBF78C0261F409800079B16 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		8FBF78C2261F409800079B16 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		8FBF78C3261F409800079B16 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		8FBF78C4261F409800079B16 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8FBF78C6261F409800079B16 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		8FBF78EF261F457000079B16 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		8FBF78F0261F457000079B16 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		8FBF78F1261F457000079B16 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		8FBF78F6261F457000079B16 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8FBF791B261F4C6400079B16 /* EasyViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyViews.swift; sourceTree = "<group>"; };
+		8FBF791C261F4C6400079B16 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		8FBF791D261F4C6400079B16 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		8FBF791E261F4C6400079B16 /* EasyShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyShadow.swift; sourceTree = "<group>"; };
+		8FBF7939261F514500079B16 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8FBF793A261F514500079B16 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8FBF793B261F514500079B16 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		8FBF793C261F514500079B16 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		8FBF793E261F514500079B16 /* MainRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRemoteDataSource.swift; sourceTree = "<group>"; };
+		8FBF793F261F514500079B16 /* MainRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRepo.swift; sourceTree = "<group>"; };
+		8FBF7940261F514500079B16 /* MainLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLocalDataSource.swift; sourceTree = "<group>"; };
+		8FBF794E261F523C00079B16 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8FBF794F261F523C00079B16 /* TasksRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksRouter.swift; sourceTree = "<group>"; };
+		8FBF7950261F523C00079B16 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		8FBF7951261F523C00079B16 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		8FBF7952261F523C00079B16 /* URLSession+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Result.swift"; sourceTree = "<group>"; };
+		8FBF7959261F523C00079B16 /* RequestTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTask.swift; sourceTree = "<group>"; };
+		8FBF795A261F523C00079B16 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		8FBF795D261F523C00079B16 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		8FBF795E261F523C00079B16 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8FBF795F261F523C00079B16 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8FBF7960261F523C00079B16 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8FBF7961261F523C00079B16 /* EnvTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvTest.swift; sourceTree = "<group>"; };
+		8FBF797A261F53CD00079B16 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8FBF798B261F59E000079B16 /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Encoding.swift"; sourceTree = "<group>"; };
+		8FBF7990261F5A0600079B16 /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		8FBF7995261F5BCE00079B16 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		8FBF799F261F875C00079B16 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		8FBF79E7261FA22F00079B16 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		8FBF79E8261FA22F00079B16 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		8FBF7A82261FAA1100079B16 /* EasyTableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTableViews.swift; sourceTree = "<group>"; };
+		902911DAE26734D32A244202 /* Pods-AutoDeskTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodo.debug.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodo/Pods-AutoDeskTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		BC7718D2B037ADCFF8CB4B80 /* Pods-AutoDeskTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodo.release.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodo/Pods-AutoDeskTodo.release.xcconfig"; sourceTree = "<group>"; };
+		C191C7A9209D635EA2E68EA5 /* Pods_AutoDeskTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoDeskTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D18F101EC0F7AF1DEA1782 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodo-AutoDeskTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodo-AutoDeskTodoUITests/Pods-AutoDeskTodo-AutoDeskTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3BCA590BC1F414780EE69E4 /* Pods-AutoDeskTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoDeskTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoDeskTodoTests/Pods-AutoDeskTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F37F49EA7A6D86420452D1EB /* Pods_AutoDeskTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoDeskTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36C4392E6CDE4D7DB6100F2 /* Pods_AutoDeskTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CE84F2E9121FF763D4CE94 /* Pods_AutoDeskTodoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC33A82C1AF14DA51E6755CE /* Pods_AutoDeskTodo_AutoDeskTodoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +176,8 @@
 				8FBF7898261F389D00079B16 /* AutoDeskTodoTests */,
 				8FBF78A3261F389D00079B16 /* AutoDeskTodoUITests */,
 				8FBF7880261F389B00079B16 /* Products */,
+				9BB183895674E316490625BB /* Pods */,
+				CD971086A7C8CBD16EDC5C7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +194,12 @@
 		8FBF7881261F389B00079B16 /* AutoDeskTodo */ = {
 			isa = PBXGroup;
 			children = (
-				8FBF7882261F389B00079B16 /* AppDelegate.swift */,
-				8FBF7884261F389B00079B16 /* SceneDelegate.swift */,
-				8FBF7886261F389B00079B16 /* ViewController.swift */,
-				8FBF7888261F389B00079B16 /* Main.storyboard */,
-				8FBF788B261F389D00079B16 /* Assets.xcassets */,
-				8FBF788D261F389D00079B16 /* LaunchScreen.storyboard */,
+				8FBF795B261F523C00079B16 /* Rest */,
+				8FBF794B261F523C00079B16 /* Network */,
+				8FBF7919261F4C6400079B16 /* Helpers */,
+				8FBF78E5261F441E00079B16 /* Resources */,
+				8FBF78BB261F409800079B16 /* Application */,
+				8FBF78E4261F440500079B16 /* UI */,
 				8FBF7890261F389D00079B16 /* Info.plist */,
 			);
 			path = AutoDeskTodo;
@@ -128,6 +223,212 @@
 			path = AutoDeskTodoUITests;
 			sourceTree = "<group>";
 		};
+		8FBF78BB261F409800079B16 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78BC261F409800079B16 /* Coordinators */,
+				8FBF78C1261F409800079B16 /* Protocols */,
+				8FBF78C5261F409800079B16 /* Router */,
+				8FBF7882261F389B00079B16 /* AppDelegate.swift */,
+				8FBF78C0261F409800079B16 /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8FBF78BC261F409800079B16 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78BD261F409800079B16 /* Cooredinators.swift */,
+				8FBF78BE261F409800079B16 /* BaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8FBF78C1261F409800079B16 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78C2261F409800079B16 /* Routable.swift */,
+				8FBF78C3261F409800079B16 /* Presentable.swift */,
+				8FBF78C4261F409800079B16 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8FBF78C5261F409800079B16 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78C6261F409800079B16 /* ApplicationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8FBF78E4261F440500079B16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78EE261F457000079B16 /* Onboarding */,
+				8FBF7938261F514500079B16 /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8FBF78E5261F441E00079B16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF788B261F389D00079B16 /* Assets.xcassets */,
+				8FBF788D261F389D00079B16 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8FBF78EE261F457000079B16 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF78EF261F457000079B16 /* OnboardingCoordinator.swift */,
+				8FBF78F6261F457000079B16 /* OnboardingViewModel.swift */,
+				8FBF78F0261F457000079B16 /* OnboardingViewController.swift */,
+				8FBF78F1261F457000079B16 /* Onboarding.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8FBF7919261F4C6400079B16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF7A7E261FA9FF00079B16 /* Easy */,
+				8FBF791C261F4C6400079B16 /* ColorPalette.swift */,
+				8FBF791D261F4C6400079B16 /* AppFonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8FBF7938261F514500079B16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF79D9261FA1A600079B16 /* ViewModels */,
+				8FBF79D8261FA19B00079B16 /* Views */,
+				8FBF7939261F514500079B16 /* MainViewController.swift */,
+				8FBF793B261F514500079B16 /* MainCoordinator.swift */,
+				8FBF793C261F514500079B16 /* Main.swift */,
+				8FBF793D261F514500079B16 /* Repo */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8FBF793D261F514500079B16 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF793F261F514500079B16 /* MainRepo.swift */,
+				8FBF793E261F514500079B16 /* MainRemoteDataSource.swift */,
+				8FBF7940261F514500079B16 /* MainLocalDataSource.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		8FBF794B261F523C00079B16 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF794C261F523C00079B16 /* Core */,
+				8FBF7960261F523C00079B16 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8FBF794C261F523C00079B16 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF7950261F523C00079B16 /* Environment.swift */,
+				8FBF7951261F523C00079B16 /* Error.swift */,
+				8FBF794E261F523C00079B16 /* Router.swift */,
+				8FBF7952261F523C00079B16 /* URLSession+Result.swift */,
+				8FBF799F261F875C00079B16 /* URLConvertible+URLRequestConvertible.swift */,
+				8FBF7990261F5A0600079B16 /* AnyEncodable.swift */,
+				8FBF798B261F59E000079B16 /* URLRequest+Encoding.swift */,
+				8FBF7959261F523C00079B16 /* RequestTask.swift */,
+				8FBF795A261F523C00079B16 /* Cancellable.swift */,
+				8FBF795E261F523C00079B16 /* Utils.swift */,
+				8FBF795F261F523C00079B16 /* Endpoint.swift */,
+				8FBF7995261F5BCE00079B16 /* Method.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8FBF7953261F523C00079B16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF797A261F53CD00079B16 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FBF795B261F523C00079B16 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF79A7261F8E6000079B16 /* Routers */,
+				8FBF7953261F523C00079B16 /* Models */,
+				8FBF7961261F523C00079B16 /* EnvTest.swift */,
+				8FBF795D261F523C00079B16 /* Rest.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		8FBF79A7261F8E6000079B16 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF794F261F523C00079B16 /* TasksRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		8FBF79D8261FA19B00079B16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF79E7261FA22F00079B16 /* TaskCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FBF79D9261FA1A600079B16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF793A261F514500079B16 /* MainViewModel.swift */,
+				8FBF79E8261FA22F00079B16 /* TaskCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8FBF7A7E261FA9FF00079B16 /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				8FBF7A82261FAA1100079B16 /* EasyTableViews.swift */,
+				8FBF791B261F4C6400079B16 /* EasyViews.swift */,
+				8FBF791E261F4C6400079B16 /* EasyShadow.swift */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
+		9BB183895674E316490625BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				902911DAE26734D32A244202 /* Pods-AutoDeskTodo.debug.xcconfig */,
+				BC7718D2B037ADCFF8CB4B80 /* Pods-AutoDeskTodo.release.xcconfig */,
+				E0D18F101EC0F7AF1DEA1782 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.debug.xcconfig */,
+				69762BED335DDD01BB072D77 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.release.xcconfig */,
+				E3BCA590BC1F414780EE69E4 /* Pods-AutoDeskTodoTests.debug.xcconfig */,
+				83EABEE86B9D6A394A858A04 /* Pods-AutoDeskTodoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD971086A7C8CBD16EDC5C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F37F49EA7A6D86420452D1EB /* Pods_AutoDeskTodo.framework */,
+				883830D4B2545D2ECDC3C82D /* Pods_AutoDeskTodo_AutoDeskTodoUITests.framework */,
+				C191C7A9209D635EA2E68EA5 /* Pods_AutoDeskTodoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +436,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBF78A9261F389E00079B16 /* Build configuration list for PBXNativeTarget "AutoDeskTodo" */;
 			buildPhases = (
+				F117847E60202344528261E6 /* [CP] Check Pods Manifest.lock */,
 				8FBF787B261F389B00079B16 /* Sources */,
 				8FBF787C261F389B00079B16 /* Frameworks */,
 				8FBF787D261F389B00079B16 /* Resources */,
+				C7FD28B59BA98AF922A8D702 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +455,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBF78AC261F389E00079B16 /* Build configuration list for PBXNativeTarget "AutoDeskTodoTests" */;
 			buildPhases = (
+				C109B68A3EB722F874DF7572 /* [CP] Check Pods Manifest.lock */,
 				8FBF7891261F389D00079B16 /* Sources */,
 				8FBF7892261F389D00079B16 /* Frameworks */,
 				8FBF7893261F389D00079B16 /* Resources */,
@@ -170,9 +474,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBF78AF261F389E00079B16 /* Build configuration list for PBXNativeTarget "AutoDeskTodoUITests" */;
 			buildPhases = (
+				40A1E61BDB838A2AA2C799C3 /* [CP] Check Pods Manifest.lock */,
 				8FBF789C261F389D00079B16 /* Sources */,
 				8FBF789D261F389D00079B16 /* Frameworks */,
 				8FBF789E261F389D00079B16 /* Resources */,
+				A858855383FAEA1EE40623D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +539,6 @@
 			files = (
 				8FBF788F261F389D00079B16 /* LaunchScreen.storyboard in Resources */,
 				8FBF788C261F389D00079B16 /* Assets.xcassets in Resources */,
-				8FBF788A261F389B00079B16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +558,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40A1E61BDB838A2AA2C799C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoDeskTodo-AutoDeskTodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A858855383FAEA1EE40623D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo-AutoDeskTodoUITests/Pods-AutoDeskTodo-AutoDeskTodoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo-AutoDeskTodoUITests/Pods-AutoDeskTodo-AutoDeskTodoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo-AutoDeskTodoUITests/Pods-AutoDeskTodo-AutoDeskTodoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C109B68A3EB722F874DF7572 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoDeskTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FD28B59BA98AF922A8D702 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo/Pods-AutoDeskTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo/Pods-AutoDeskTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoDeskTodo/Pods-AutoDeskTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F117847E60202344528261E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoDeskTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FBF787B261F389B00079B16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBF7887261F389B00079B16 /* ViewController.swift in Sources */,
+				8FBF78CA261F409800079B16 /* Application.swift in Sources */,
+				8FBF7945261F514500079B16 /* MainRemoteDataSource.swift in Sources */,
+				8FBF797B261F53CD00079B16 /* Task.swift in Sources */,
+				8FBF7962261F523C00079B16 /* Router.swift in Sources */,
+				8FBF79EA261FA22F00079B16 /* TaskCellViewModel.swift in Sources */,
+				8FBF79A0261F875C00079B16 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				8FBF7970261F523C00079B16 /* Utils.swift in Sources */,
+				8FBF7946261F514500079B16 /* MainRepo.swift in Sources */,
+				8FBF78CC261F409800079B16 /* Presentable.swift in Sources */,
+				8FBF7963261F523C00079B16 /* TasksRouter.swift in Sources */,
+				8FBF798C261F59E000079B16 /* URLRequest+Encoding.swift in Sources */,
+				8FBF78CE261F409800079B16 /* ApplicationRouter.swift in Sources */,
+				8FBF7922261F4C6400079B16 /* AppFonts.swift in Sources */,
+				8FBF7947261F514500079B16 /* MainLocalDataSource.swift in Sources */,
+				8FBF78CB261F409800079B16 /* Routable.swift in Sources */,
+				8FBF7921261F4C6400079B16 /* ColorPalette.swift in Sources */,
+				8FBF7973261F523C00079B16 /* EnvTest.swift in Sources */,
+				8FBF7965261F523C00079B16 /* Error.swift in Sources */,
+				8FBF78F7261F457000079B16 /* OnboardingCoordinator.swift in Sources */,
+				8FBF796D261F523C00079B16 /* Cancellable.swift in Sources */,
+				8FBF78F9261F457000079B16 /* Onboarding.swift in Sources */,
+				8FBF796F261F523C00079B16 /* Rest.swift in Sources */,
 				8FBF7883261F389B00079B16 /* AppDelegate.swift in Sources */,
-				8FBF7885261F389B00079B16 /* SceneDelegate.swift in Sources */,
+				8FBF7966261F523C00079B16 /* URLSession+Result.swift in Sources */,
+				8FBF7920261F4C6400079B16 /* EasyViews.swift in Sources */,
+				8FBF78C7261F409800079B16 /* Cooredinators.swift in Sources */,
+				8FBF7991261F5A0600079B16 /* AnyEncodable.swift in Sources */,
+				8FBF7944261F514500079B16 /* Main.swift in Sources */,
+				8FBF78FD261F457000079B16 /* OnboardingViewModel.swift in Sources */,
+				8FBF7972261F523C00079B16 /* Network.swift in Sources */,
+				8FBF7943261F514500079B16 /* MainCoordinator.swift in Sources */,
+				8FBF7996261F5BCE00079B16 /* Method.swift in Sources */,
+				8FBF7A83261FAA1100079B16 /* EasyTableViews.swift in Sources */,
+				8FBF7942261F514500079B16 /* MainViewModel.swift in Sources */,
+				8FBF79E9261FA22F00079B16 /* TaskCell.swift in Sources */,
+				8FBF78F8261F457000079B16 /* OnboardingViewController.swift in Sources */,
+				8FBF796C261F523C00079B16 /* RequestTask.swift in Sources */,
+				8FBF7964261F523C00079B16 /* Environment.swift in Sources */,
+				8FBF7971261F523C00079B16 /* Endpoint.swift in Sources */,
+				8FBF7923261F4C6400079B16 /* EasyShadow.swift in Sources */,
+				8FBF7941261F514500079B16 /* MainViewController.swift in Sources */,
+				8FBF78C8261F409800079B16 /* BaseCoordinator.swift in Sources */,
+				8FBF78CD261F409800079B16 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +744,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8FBF7888261F389B00079B16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FBF7889261F389B00079B16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8FBF788D261F389D00079B16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +861,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +873,7 @@
 		};
 		8FBF78AA261F389E00079B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902911DAE26734D32A244202 /* Pods-AutoDeskTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,12 +887,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shalom.AutoDeskTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8FBF78AB261F389E00079B16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7718D2B037ADCFF8CB4B80 /* Pods-AutoDeskTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,14 +907,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shalom.AutoDeskTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		8FBF78AD261F389E00079B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BCA590BC1F414780EE69E4 /* Pods-AutoDeskTodoTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88SA3QBW9Z;
@@ -493,8 +936,9 @@
 		};
 		8FBF78AE261F389E00079B16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83EABEE86B9D6A394A858A04 /* Pods-AutoDeskTodoTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88SA3QBW9Z;
@@ -515,8 +959,9 @@
 		};
 		8FBF78B0261F389E00079B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D18F101EC0F7AF1DEA1782 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88SA3QBW9Z;
 				INFOPLIST_FILE = AutoDeskTodoUITests/Info.plist;
@@ -535,8 +980,9 @@
 		};
 		8FBF78B1261F389E00079B16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69762BED335DDD01BB072D77 /* Pods-AutoDeskTodo-AutoDeskTodoUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88SA3QBW9Z;
 				INFOPLIST_FILE = AutoDeskTodoUITests/Info.plist;
